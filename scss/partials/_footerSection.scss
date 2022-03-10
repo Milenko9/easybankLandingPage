@@ -60,3 +60,46 @@ footer {
     }
   }
 }
+
+
+@media (min-width: 1024px) {
+  footer {
+    text-align: left;
+    .logoIconsFooter {
+      padding: 50px 0 0 200px;
+      .logoFooter {
+        padding-top: 0;
+      }
+      .iconsFooter {
+        ul {
+          display: flex;
+          justify-content: flex-start;
+          padding: 60px 0 0;
+          gap: 20px;
+        }
+      }
+    }
+    .navFooterDiv {
+      padding: 50px 0 0;
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          padding: 4px;
+          width: 40%;
+        }
+      }
+    }
+    .btnCopyrightsFooter {
+      padding: 50px 200px 0 0;
+      text-align: right;
+    }
+    .codedBy {
+      text-align: center;
+      padding-top: 50px;
+    }
+  }
+
+}

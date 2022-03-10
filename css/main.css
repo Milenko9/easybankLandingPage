@@ -101,7 +101,6 @@ a {
     font-size: 18px;
     color: black; } }
 main .intro .imgIntro {
-  width: 100%;
   height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,6 +135,8 @@ main .whyChooseSection {
     main .whyChooseSection .whyFirstArticle p {
       color: #9698a6;
       padding: 0 40px; }
+      main .whyChooseSection .whyFirstArticle p br {
+        display: none; }
   main .whyChooseSection .restWhyArticles {
     padding: 10px 0; }
     main .whyChooseSection .restWhyArticles h3 {
@@ -174,6 +175,63 @@ main .latestSection {
       color: #9698a6;
       font-size: 14px; }
 
+@media (min-width: 1024px) {
+  main .intro .imgIntro {
+    height: 590px;
+    background-image: url("../images/bg-intro-desktop.svg");
+    position: relative;
+    background-size: cover; }
+    main .intro .imgIntro img {
+      position: absolute; }
+  main .intro .txtIntro {
+    text-align: left;
+    padding: 135px 120px 135px 200px; }
+    main .intro .txtIntro h1 {
+      font-size: 50px;
+      padding: 0; }
+    main .intro .txtIntro p {
+      font-size: 18px;
+      padding: 20px 0; }
+  main .whyChooseSection {
+    text-align: left;
+    padding: 50px 200px;
+    background-color: #f0f0f0; }
+    main .whyChooseSection .whyFirstArticle {
+      margin-bottom: 20px;
+      padding: 0; }
+      main .whyChooseSection .whyFirstArticle h2 {
+        font-size: 40px;
+        padding-top: 100px; }
+        main .whyChooseSection .whyFirstArticle h2 br {
+          display: none; }
+      main .whyChooseSection .whyFirstArticle p {
+        padding: 20px 0; }
+        main .whyChooseSection .whyFirstArticle p br {
+          display: block; }
+    main .whyChooseSection .restWhyArticles {
+      padding: 50px 30px 0 0; }
+      main .whyChooseSection .restWhyArticles h3 {
+        margin: 20px 0;
+        font-size: 22px; }
+      main .whyChooseSection .restWhyArticles p {
+        padding: 0; }
+  main .latestSection {
+    background-color: white;
+    padding: 0 200px;
+    background-color: #f0f0f0; }
+    main .latestSection h4 {
+      font-size: 40px;
+      text-align: left;
+      margin: 80px 0 30px;
+      padding: 0; }
+    main .latestSection .latestArticles {
+      padding: 0 20px 50px 0; }
+      main .latestSection .latestArticles:last-child {
+        padding-bottom: 0; }
+      main .latestSection .latestArticles img {
+        height: 200px; }
+      main .latestSection .latestArticles .articleTextDivs {
+        padding: 20px 40px 30px; } }
 footer {
   background-color: #2d314d;
   text-align: center; }
@@ -215,6 +273,34 @@ footer {
     color: #9698a6;
     font-size: 12px; }
 
+@media (min-width: 1024px) {
+  footer {
+    text-align: left; }
+    footer .logoIconsFooter {
+      padding: 50px 0 0 200px; }
+      footer .logoIconsFooter .logoFooter {
+        padding-top: 0; }
+      footer .logoIconsFooter .iconsFooter ul {
+        display: flex;
+        justify-content: flex-start;
+        padding: 60px 0 0;
+        gap: 20px; }
+    footer .navFooterDiv {
+      padding: 50px 0 0; }
+      footer .navFooterDiv ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap; }
+        footer .navFooterDiv ul li {
+          padding: 4px;
+          width: 40%; }
+    footer .btnCopyrightsFooter {
+      padding: 50px 200px 0 0;
+      text-align: right; }
+    footer .codedBy {
+      text-align: center;
+      padding-top: 50px; } }
 * {
   box-sizing: border-box; }
   * body {
