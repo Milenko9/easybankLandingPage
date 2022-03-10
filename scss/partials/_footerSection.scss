@@ -1,0 +1,58 @@
+footer {
+  border: 2px solid purple;
+  background-color: hsl(233, 26%, 24%);
+  text-align: center;
+  .logoIconsFooter {
+    border: 2px solid yellow;
+    .logoFooter {
+      border: 2px solid red;
+      padding-top: 25px;
+    }
+    .iconsFooter {
+      border: 2px solid green;
+      ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 80px;
+        margin: 0;
+      }
+    }
+  }
+  .navFooterDiv {
+    border: 2px solid orange;
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 4px;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  .btnCopyrightsFooter {
+    border: 2px solid pink;
+    .requestFooterBtn {
+      border: none;
+      color: white;
+      letter-spacing: 1px;
+      font-size: 13px;
+      padding: 10px 20px;
+      margin: 20px 0;
+      border-radius: 20px;
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,12,1) 0%, rgba(0,212,255,1) 100%);
+    }
+    h6 {
+      color: hsl(233, 8%, 62%);
+      font-size: 14px;
+    }
+  }
+  .codedBy {
+    p {
+      margin: 30px 0 0;
+      color: hsl(233, 8%, 62%);
+      font-size: 12px;
+    }
+  }
+}
