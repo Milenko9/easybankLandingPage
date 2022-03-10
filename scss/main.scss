@@ -8,4 +8,10 @@
   body {
     font-family: 'Public Sans', sans-serif;
   }
+  button {
+    transition: 0.4s;
+    &:hover {
+      opacity: .5;
+    }
+  }
 }

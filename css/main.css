@@ -28,13 +28,17 @@ a {
   align-items: center;
   gap: 25px;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  border-radius: 5px; }
 
 .nav-linkMS {
   transition: 0.7s ease; }
 
 .nav-linkMS:hover {
-  color: dodgerblue; }
+  color: black;
+  border-bottom: 4px solid;
+  padding-bottom: 10px;
+  border-image: linear-gradient(to right, #09790c, #00d4ff) 1; }
 
 .hamburger {
   display: none;
@@ -75,11 +79,11 @@ a {
   .nav-menuMS {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 100px;
     gap: 0;
     flex-direction: column;
     background-color: white;
-    width: 100%;
+    width: 90%;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 0 8px; }
@@ -88,126 +92,124 @@ a {
     margin: 16px 0; }
 
   .nav-menuMS.active {
-    left: 0; }
+    left: 5%; }
 
   .requestHeaderBtn {
-    display: none; } }
-main {
-  border: 2px solid red; }
-  main .intro {
-    border: 2px solid black; }
-    main .intro .imgIntro {
-      border: 2px solid pink;
-      width: 100%;
-      height: 300px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url("../images/bg-intro-mobile.svg"); }
-    main .intro .txtIntro {
-      border: 2px solid green;
-      text-align: center;
-      padding: 40px 0 80px;
-      background-color: white; }
-      main .intro .txtIntro h1 {
-        font-size: 40px;
-        padding: 0 20px 10px; }
-      main .intro .txtIntro p {
-        color: #9698a6;
-        padding: 0 60px; }
-      main .intro .txtIntro .requestMainBtn {
-        border: none;
-        color: white;
-        letter-spacing: 1px;
-        font-size: 13px;
-        padding: 10px 20px;
-        margin-top: 10px;
-        border-radius: 20px;
-        background: linear-gradient(90deg, #020024 0%, #09790c 0%, #00d4ff 100%); }
-  main .whyChooseSection {
-    border: 2px solid dodgerblue;
-    text-align: center;
-    padding: 50px 0; }
+    display: none; }
+
+  .nav-linkMS {
+    font-size: 18px;
+    color: black; } }
+main .intro .imgIntro {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/bg-intro-mobile.svg"); }
+main .intro .txtIntro {
+  text-align: center;
+  padding: 40px 0 80px;
+  background-color: white; }
+  main .intro .txtIntro h1 {
+    font-size: 40px;
+    padding: 0 20px 10px; }
+  main .intro .txtIntro p {
+    color: #9698a6;
+    padding: 0 60px; }
+  main .intro .txtIntro .requestMainBtn {
+    border: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #020024 0%, #09790c 0%, #00d4ff 100%); }
+main .whyChooseSection {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fafafa; }
+  main .whyChooseSection .whyFirstArticle {
+    margin-bottom: 20px; }
     main .whyChooseSection .whyFirstArticle h2 {
       font-size: 33px; }
     main .whyChooseSection .whyFirstArticle p {
       color: #9698a6;
       padding: 0 40px; }
-    main .whyChooseSection .restWhyArticles {
-      padding: 10px 0; }
-      main .whyChooseSection .restWhyArticles h3 {
-        margin: 20px 0;
-        font-size: 22px; }
-      main .whyChooseSection .restWhyArticles p {
-        color: #9698a6;
-        padding: 0 30px; }
-  main .latestSection {
-    border: 2px solid black;
-    background-color: white; }
-    main .latestSection h4 {
-      font-size: 30px;
-      text-align: center;
-      margin: 80px 0 30px; }
-    main .latestSection .latestArticles {
-      border: 2px solid orange; }
-      main .latestSection .latestArticles:last-child {
-        padding-bottom: 80px; }
-      main .latestSection .latestArticles img {
-        padding: 0;
-        width: 92%;
-        height: 250px;
-        margin: auto;
-        border-radius: 10px 10px 0 0; }
-      main .latestSection .latestArticles .articleTextDivs {
-        border: 2px solid black;
-        padding: 30px 60px 30px; }
-        main .latestSection .latestArticles .articleTextDivs span {
-          color: #9698a6;
-          font-size: 10px; }
-        main .latestSection .latestArticles .articleTextDivs h5 {
-          margin: 10px 0; }
-        main .latestSection .latestArticles .articleTextDivs p {
-          color: #9698a6;
-          font-size: 14px; }
-
-footer {
-  border: 2px solid purple;
-  background-color: #2d314d;
-  text-align: center; }
-  footer .logoIconsFooter {
-    border: 2px solid yellow; }
-    footer .logoIconsFooter .logoFooter {
-      border: 2px solid red;
-      padding-top: 25px; }
-    footer .logoIconsFooter .iconsFooter {
-      border: 2px solid green; }
-      footer .logoIconsFooter .iconsFooter ul {
-        display: flex;
-        justify-content: space-around;
-        padding: 20px 80px;
-        margin: 0; }
-  footer .navFooterDiv {
-    border: 2px solid orange; }
-    footer .navFooterDiv ul {
-      padding: 0;
-      margin: 0; }
-      footer .navFooterDiv ul li {
-        padding: 4px; }
-        footer .navFooterDiv ul li a {
-          color: white; }
-  footer .btnCopyrightsFooter {
-    border: 2px solid pink; }
-    footer .btnCopyrightsFooter .requestFooterBtn {
-      border: none;
-      color: white;
-      letter-spacing: 1px;
-      font-size: 13px;
-      padding: 10px 20px;
+  main .whyChooseSection .restWhyArticles {
+    padding: 10px 0; }
+    main .whyChooseSection .restWhyArticles h3 {
       margin: 20px 0;
-      border-radius: 20px;
-      background: linear-gradient(90deg, #020024 0%, #09790c 0%, #00d4ff 100%); }
-    footer .btnCopyrightsFooter h6 {
+      font-size: 22px; }
+    main .whyChooseSection .restWhyArticles p {
+      color: #9698a6;
+      padding: 0 30px; }
+main .latestSection {
+  background-color: white; }
+  main .latestSection h4 {
+    font-size: 30px;
+    text-align: center;
+    margin: 80px 0 30px; }
+  main .latestSection .latestArticles:last-child {
+    padding-bottom: 80px; }
+  main .latestSection .latestArticles img {
+    padding: 0;
+    width: 92%;
+    height: 250px;
+    margin: auto;
+    border-radius: 10px 10px 0 0; }
+  main .latestSection .latestArticles .articleTextDivs {
+    padding: 30px 60px 30px; }
+    main .latestSection .latestArticles .articleTextDivs span {
+      color: #9698a6;
+      font-size: 10px; }
+    main .latestSection .latestArticles .articleTextDivs a {
+      display: block;
+      margin: 7px 0;
+      color: black;
+      transition: 0.3s; }
+      main .latestSection .latestArticles .articleTextDivs a:hover {
+        color: #6bc287; }
+    main .latestSection .latestArticles .articleTextDivs p {
       color: #9698a6;
       font-size: 14px; }
+
+footer {
+  background-color: #2d314d;
+  text-align: center; }
+  footer .logoIconsFooter .logoFooter {
+    padding-top: 25px; }
+  footer .logoIconsFooter .iconsFooter ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 120px;
+    margin: 0; }
+    footer .logoIconsFooter .iconsFooter ul img {
+      transition: 0.5s; }
+      footer .logoIconsFooter .iconsFooter ul img:hover {
+        filter: brightness(0) saturate(100%) invert(71%) sepia(44%) saturate(388%) hue-rotate(87deg) brightness(90%) contrast(86%); }
+  footer .navFooterDiv ul {
+    padding: 0;
+    margin: 0; }
+    footer .navFooterDiv ul li {
+      padding: 4px; }
+      footer .navFooterDiv ul li a {
+        color: white;
+        transition: 0.3s; }
+        footer .navFooterDiv ul li a:hover {
+          color: #6bc287; }
+  footer .btnCopyrightsFooter .requestFooterBtn {
+    border: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #020024 0%, #09790c 0%, #00d4ff 100%); }
+  footer .btnCopyrightsFooter h6 {
+    color: #9698a6;
+    font-size: 14px; }
   footer .codedBy p {
     margin: 30px 0 0;
     color: #9698a6;
@@ -217,5 +219,9 @@ footer {
   box-sizing: border-box; }
   * body {
     font-family: 'Public Sans', sans-serif; }
+  * button {
+    transition: 0.4s; }
+    * button:hover {
+      opacity: .5; }
 
 /*# sourceMappingURL=main.css.map */
